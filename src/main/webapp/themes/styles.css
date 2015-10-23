@@ -1,0 +1,18 @@
+
+HTML {margin:0;padding:0;height:100%;overflow:auto;}
+BODY {margin:0;padding:0;overflow:auto;font-size:12px;color:#000;background:#00468C;font-family:Verdana, Arial;font-size:11px;}
+
+/*表格编辑*/
+.EditTable { background: #0076C6; font-size: 12px; cursor: default;border-width:0px;width:60%; }
+.EditTableHeader { color: #0076C6; background: #0076C6; font-size: 14px; font-weight: bold; text-align: center; height: 28px; padding:4px; }
+
+
+/*文本格式*/
+.Label{background: #99CCFF;padding: 3px 8px 3px 3px;font-family:Verdana, Arial;font-size:11px;text-align: right;height: 20px;}
+.Field{background: #f2f7fc;padding: 3px 3px 3px 3px;font-family:Verdana, Arial;font-size:11px;text-align: left;height: 24px;}
+
+
+/*数据列表*/
+.ListTable { background:#ffffff; font-size: 12px; cursor: default;border-width:0px;width:98%; }
+.ListTable td {font-family: Verdana, Arial; font-size: 11px; height: 18px;}
+.ListTableHeader { color: #0076C6; background:#6699CC; font-size: 14px; font-weight: bold; text-align: center; height: 20px; }
