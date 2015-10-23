@@ -25,7 +25,6 @@ public class TopicManage {
 			ResultSet rs = ps.executeQuery();
 			return rs;
 		} catch (SQLException e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 		}
 		return null;
@@ -50,7 +49,6 @@ public class TopicManage {
 			}
 			return tp;
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
@@ -100,7 +98,6 @@ public class TopicManage {
 			stmt.close();
 			issuucess = true;
 		} catch (SQLException e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 
 		}

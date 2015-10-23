@@ -32,7 +32,6 @@ public class UserManage {
 				issuucess = true;
 				request.getSession().setAttribute("UserName", username);
 				System.out.println("userid" + userid);
-				// 取用户的操作权限
 				sql = "select * from popedom where id IN(select popedomid from user_pepodom where userid='"
 						+ userid + "')";
 				rs = stmt.executeQuery(sql);
@@ -44,7 +43,6 @@ public class UserManage {
 			}
 			return issuucess;
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return issuucess;

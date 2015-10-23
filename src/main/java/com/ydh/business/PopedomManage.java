@@ -48,7 +48,6 @@ public class PopedomManage {
 			rs = stmt.executeQuery(sql);
 			request.setAttribute("PopedomList", rs);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -67,7 +66,6 @@ public class PopedomManage {
 			cn.close();
 			issuucess = Save(request);
 		} catch (SQLException e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 
 		}
@@ -93,7 +91,6 @@ public class PopedomManage {
 			}
 			cn.close();
 		} catch (SQLException e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 
 		}

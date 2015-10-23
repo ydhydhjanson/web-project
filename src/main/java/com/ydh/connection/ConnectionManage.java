@@ -21,7 +21,6 @@ public class ConnectionManage {
 			 Driver = props.getProperty("Driver");
 			 Class.forName(Driver);
 		} catch (Exception e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 		}
 	}
@@ -32,7 +31,6 @@ public class ConnectionManage {
 				cn = DriverManager.getConnection(Url,UserName, Password);
 			}
 		} catch (SQLException e) {
-			// TODO 自动生成 catch 块
 			e.printStackTrace();
 		}
 		
@@ -44,7 +42,6 @@ public class ConnectionManage {
 			try {
 				cn.close();
 			} catch (SQLException e) {
-				// TODO 自动生成 catch 块
 				e.printStackTrace();
 			}
 	}
