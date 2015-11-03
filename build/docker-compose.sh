@@ -17,9 +17,9 @@ http://10.10.10.7:2375/containers/create?name=mysql \
 	],
 	"PortBindings": { "3306/tcp": [{ "HostPort": "3306" }] }
 }
-}' | cut -d "\"" -f 4 `
+}' ` #| cut -d "\"" -f 4 
 echo ${containerID}
-curl -X POST -H "Content-Type: application/json" http://10.10.10.7:2375/containers/${containerID}/start
+curl -X POST -H "Content-Type: application/json" http://10.10.10.7:2375/containers/mysql/start
 else
   echo "mysql容器已存在"
 fi
@@ -39,9 +39,9 @@ http://10.10.10.7:2375/containers/create?name=web-project \
 	],
 	"PortBindings": { "8080/tcp": [{ "HostPort": "8089" }] }
 }
-}' | cut -d "\"" -f 4 `
+}' ` # | cut -d "\"" -f 4 
 echo ${containerID}
-curl -X POST -H "Content-Type: application/json" http://10.10.10.7:2375/containers/${containerID}/start
+curl -X POST -H "Content-Type: application/json" http://10.10.10.7:2375/containers/web-project/start
 else
   echo "web-project容器已存在"
 fi
