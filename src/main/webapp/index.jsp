@@ -38,7 +38,7 @@ BODY {margin:0;padding:0;overflow:auto;font-size:12px;color:#000;background:#004
 	</head>
 	<body>
 		<center>
-			<font color="#FFFFFF" face="方正舒体" size="7">留&nbsp;&nbsp;言&nbsp;&nbsp;板-更改</font>
+			<font color="#FFFFFF" face="方正舒体" size="7">留&nbsp;&nbsp;言&nbsp;&nbsp;板</font>
 			<hr width="98%">
 		</center>
 		<div align="center">
